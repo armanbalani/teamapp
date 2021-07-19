@@ -2,10 +2,15 @@
 
 body h1 {
     font-size: 55px;
+    font-weight: 400;
+    color: #1B326C;
+    line-height: 60px;
+    margin-bottom: 20px;
 }
 
 body p {
     font-size: 18px;
+    color: rgba(27, 50, 108, 0.7);
 }
 
 .hero {
@@ -18,9 +23,24 @@ body p {
     display: flex;
 }
 
+.learn {
+    display: flex;
+    margin-top: 40px;
+}
+
 .navbar {
     background: none;
     margin: 0 140px;
+}
+
+.teamwork-content {
+    display: flex;
+}
+
+.teamwork-text {
+    min-width: 285px;
+    max-width: 466px;
+    padding-top: 126px;
 }
 
 .container {
@@ -31,6 +51,13 @@ body p {
 .hero h1 {
     font-size: 52px;
     font-weight: normal !important;
+    color: white;
+}
+
+.dashboard {
+    max-width: 674px;
+    position: absolute;
+    right: 0;
 }
 
 .email-input {
@@ -61,6 +88,7 @@ input:focus::placeholder {
 .hero-content p {
     opacity: 0.8;
     margin-bottom: 68px;
+    color: white;
 }
 
 .navbar-brand {
@@ -86,4 +114,8 @@ input:focus::placeholder {
     height: 56px;
     border-radius: 4px;
     padding: 6px 26px;
+}
+
+.hub-for-teamwork {
+    margin-top: 90px;
 }
