@@ -7,7 +7,18 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { 
+    font-family: "Cabin", sans-serif;
+}
