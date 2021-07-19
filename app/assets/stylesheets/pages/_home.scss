@@ -14,6 +14,10 @@ body p {
     background-size: cover;
 }
 
+.early-access {
+    display: flex;
+}
+
 .navbar {
     background: none;
     margin: 0 140px;
@@ -29,14 +33,34 @@ body p {
     font-weight: normal !important;
 }
 
+.email-input {
+    height: 56px;
+    min-width: 321px;
+    border-radius: 11px;
+    border: 2px solid #BBC8D4;
+    padding-left: 16px;
+    margin-right: 11px;
+
+}
+
+.email-input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+
 .hero-content {
     color: white;
-    padding: 190px 0;
+    padding-top: 190px;
     max-width: 460px;
 }
 
 .hero-content p {
     opacity: 0.8;
+    margin-bottom: 68px;
 }
 
 .navbar-brand {
@@ -56,4 +80,10 @@ body p {
 
 .navbar {
     padding: 0.5rem 0rem !important;
+}
+
+.submit-btn {
+    height: 56px;
+    border-radius: 4px;
+    padding: 6px 26px;
 }
