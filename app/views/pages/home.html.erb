@@ -10,39 +10,57 @@
     </form>
   </div>
 </div>
-<section class="section">
-  <div class="container teamwork-content">
-    <div class="teamwork-text">
-      <h1>Your hub for teamwork</h1>
-      <p>Project discussions, important documents, free food announcements: they all live tidily together in Slack. Communication in Slack happens in channels, organised by project, topic, team or whatever makes sense for you".</p>
-      <div class="learn">
-        <a href="#">Learn more <%= image_tag 'link-arrow.png' %></a>
+<div class="container">
+  <section class="section">
+    <div class="teamwork-content">
+      <div class="teamwork-text">
+        <h1>Your hub for teamwork</h1>
+        <p>Project discussions, important documents, free food announcements: they all live tidily together in Slack. Communication in Slack happens in channels, organised by project, topic, team or whatever makes sense for you".</p>
+        <div class="learn">
+          <a href="#">Learn more <%= image_tag 'link-arrow.png' %></a>
+        </div>
+      </div>
+      <%= image_tag 'dashboard.png', class: "dashboard" %>
+    </div>
+  </section>
+  <section class="section task-management">
+    <div class="teamwork-content">
+      <%= image_tag 'task.png', class: "split-section-image" %>
+      <div class="teamwork-text">
+        <h1>Simple task management</h1>
+        <p>Project discussions, important documents, free food announcements: they all live tidily together in Slack. Communication in Slack happens in channels, organised by project, topic, team or whatever makes sense for you".</p>
+        <div class="learn">
+          <a href="#">Learn more <%= image_tag 'link-arrow.png' %></a>
+        </div>
       </div>
     </div>
-    <%= image_tag 'dashboard.png', class: "dashboard" %>
-  </div>
-</section>
-<section class="section task-management">
-  <div class="container teamwork-content">
-    <%= image_tag 'task.png', class: "split-section-image" %>
-    <div class="teamwork-text">
-      <h1>Simple task management</h1>
-      <p>Project discussions, important documents, free food announcements: they all live tidily together in Slack. Communication in Slack happens in channels, organised by project, topic, team or whatever makes sense for you".</p>
-      <div class="learn">
-        <a href="#">Learn more <%= image_tag 'link-arrow.png' %></a>
+  </section>
+  <section class="section">
+    <div class="teamwork-content">
+      <div class="teamwork-text">
+        <h1>Scheduling that actually works</h1>
+        <p>Project discussions, important documents, free food announcements: they all live tidily together in Slack. Communication in Slack happens in channels, organised by project, topic, team or whatever makes sense for you".</p>
+        <div class="learn">
+          <a href="#">Learn more <%= image_tag 'link-arrow.png' %></a>
+        </div>
+      </div>
+      <%= image_tag 'schedule.png', class: "split-section-image" %>
+    </div>
+  </section>
+  <section class="section testimonial">
+    <h1 class="testimonial-header">What people say about Team</h1>
+    <div class="card">
+      <div class="card-content">
+        <%= image_tag 'Stars.png', class: "stars" %>
+        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
+        <div class="author">
+          <%= image_tag 'profile1', class: "profile-avatar" %>
+          <div class="author-text">
+            <p class="author-info author-name">Amy Goldberg</p>
+            <p class="author-info author-title">CEO at Blackrock</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container teamwork-content">
-    <div class="teamwork-text">
-      <h1>Scheduling that actually works</h1>
-      <p>Project discussions, important documents, free food announcements: they all live tidily together in Slack. Communication in Slack happens in channels, organised by project, topic, team or whatever makes sense for you".</p>
-      <div class="learn">
-        <a href="#">Learn more <%= image_tag 'link-arrow.png' %></a>
-      </div>
-    </div>
-    <%= image_tag 'schedule.png', class: "split-section-image" %>
-  </div>
-</section>
+  </section>
+</div>

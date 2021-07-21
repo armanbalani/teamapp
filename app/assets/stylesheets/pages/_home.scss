@@ -10,7 +10,8 @@ body h1 {
 
 body p {
     font-size: 18px;
-    color: rgba(27, 50, 108, 0.7);
+    color: rgba(27, 50, 108, 0.6);
+    font-weight: 600;
 }
 
 .hero {
@@ -126,4 +127,46 @@ input:focus::placeholder {
 
 .task-management {
     margin-top: 320px;
+}
+
+.testimonial-header {
+    text-align: center;
+}
+
+.author {
+    display: flex;
+}
+
+.card {
+    width: 367px;
+}
+
+.stars {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.testimonial-text {
+    margin-bottom: 70px;
+}
+
+.profile-avatar {
+    width: 56px;
+    height: 56px;
+    margin-right: 17px;
+}
+.author-info {
+    margin-bottom: 0;
+}
+
+.card-content {
+    padding: 58px 25px 44px 44px;
+}
+
+.author-name {
+    color: black;
+}
+
+.author-title {
+    font-weight: 400;
 }
