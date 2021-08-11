@@ -132,53 +132,18 @@ input:focus::placeholder {
     margin-top: 320px;
 }
 
-.testimonial-header {
-    text-align: center;
-}
-
-.author {
-    display: flex;
-}
-
-.card {
-    width: 367px;
-    flex-shrink: 0;
-    margin-right: 30px;
-}
-
-.stars {
-    width: 120px;
-    margin-bottom: 30px;
-}
-
-.testimonial-text {
-    margin-bottom: 70px;
-}
-
-.profile-avatar {
-    width: 56px;
-    height: 56px;
-    margin-right: 17px;
-}
-.author-info {
+.author-name {
+    color: black;
     margin-bottom: 0;
 }
 
-.card-content {
-    padding: 58px 25px 44px 44px;
-}
-
-.author-name {
-    color: black;
-}
-
 .author-title {
+    margin-bottom: 0;
+    font-size: 14px;
     font-weight: 400;
 }
 
-.card p {
-    font-weight: 500;
-}
+
 
 
 
