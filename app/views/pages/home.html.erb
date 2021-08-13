@@ -49,7 +49,7 @@
   </section>
 </div>
 <div class="section-2 wf-section">
-  <div class="container">
+  <div class="container testimonial-slider-container">
     <h1 class="testimonial-header">What people say about Team</h1>
     <div data-animation="slide" data-duration="500" data-infinite="1" class="slider w-slider">
       <div class="mask w-slider-mask">
@@ -99,10 +99,10 @@
         </div>
       </div>
       <div class="left-arrow w-slider-arrow-left">
-        <div class="w-icon-slider-left"></div>
+        <%= image_tag 'prev.png', class: "prev-arrow" %>
       </div>
       <div class="right-arrow w-slider-arrow-right">
-        <div class="w-icon-slider-right"></div>
+        <%= image_tag 'next.png', class: "next-arrow" %>
       </div>
       <div class="slide-nav w-slider-nav w-round"></div>
     </div>

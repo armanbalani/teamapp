@@ -1039,6 +1039,7 @@ textarea.w-select {
 .w-slider-arrow-left {
   z-index: 3;
   right: auto;
+  left: 980px;
 }
 .w-slider-arrow-right {
   z-index: 4;

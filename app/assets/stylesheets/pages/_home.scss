@@ -148,6 +148,23 @@ input:focus::placeholder {
     margin-bottom: 40px;
 }
 
+.next-arrow {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    width: 27px;
+}
+
+.prev-arrow {
+    position: absolute;
+    bottom: 0;
+    width: 27px;
+}
+
+.testimonial-slider-container {
+    margin-bottom: 114px;
+}
+
 
 
 
