@@ -35,7 +35,6 @@ body p {
 
 .navbar {
     background: none;
-    margin: 0 140px;
 }
 
 .teamwork-content {
@@ -166,7 +165,7 @@ input:focus::placeholder {
 }
 
 .footer {
-    height: 245px;
+    height: 270px;
     background-color: #535D78;
 }
 
@@ -188,6 +187,7 @@ input:focus::placeholder {
     margin-bottom: 20px;
     color: white;
     letter-spacing: 0.1em;
+    white-space: nowrap;
 }
 
 .logo-footer {
@@ -202,7 +202,51 @@ input:focus::placeholder {
     margin-right: 112px;
 }
 
+.newsletter {
+    margin-left: 2px;
+}
 
+.footer-email {
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    border: none;
+    min-width: 267px;
+}
 
+.footer-email::-webkit-input-placeholder {
+    color:rgba(255, 255, 255, 0.7)
 
+}
+
+.footer-email::-moz-placeholder {
+    color:rgba(255, 255, 255, 0.7)
+
+}
+
+.footer-email::-ms-placeholder {
+    color:rgba(255, 255, 255, 0.7)
+
+}
+
+.footer-email::placeholder {
+    color:rgba(255, 255, 255, 0.7)
+
+}
+
+.footer-input {
+    position: relative;
+}
+
+.footer-arrow {
+    position: absolute;
+    width: 42px;
+    top: 7px;
+    right: 17px;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: black !important;
+  transition: background-color 200ms linear;
+}
 
