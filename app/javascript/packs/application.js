@@ -33,3 +33,36 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+
+var navbrand = $(".nav-logo")
+var navlinks = $(".nav-link")
+var navbutton = $("#nav-button")
+
+var pathname = window.location.pathname;
+console.log(pathname)
+if (pathname != "/") {
+  console.log("in condition")
+  navbrand.css("color", "#1B326C")
+  navlinks.addClass("alt-navlink");
+  navbutton.addClass("alt-button")
+} else {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    var viewHeight = window.innerHeight
+    if (scroll >= viewHeight) {
+      navbrand.css("color", "#1B326C")
+      navlinks.addClass("alt-navlink");
+      navbutton.addClass("alt-button")
+    }
+    else {
+      navbrand.css("color", "white")
+      navlinks.removeClass("alt-navlink")
+      navbutton.removeClass("alt-button")
+    }
+  })
+
+}
+
+$(document).ready(function () {
+
+})

@@ -19,10 +19,10 @@
     <link href="images/webclip.png" rel="apple-touch-icon">
   </head>
   <body>
-    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <h4>team<span class="period">.</span></h4>
+          <h4 class="nav-logo">team<span class="period">.</span></h4>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
               <a class="nav-link" href="#">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <%= link_to 'Blog', blogs_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -42,7 +42,7 @@
               <a class="nav-link" href="#">Log in</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-primary" href="#" style="background: rgba(11, 190, 242, 0.4) !important; border:0;">Get Access</a>
+              <a id="nav-button" class="btn btn-primary" href="#" style="background: rgba(11, 190, 242, 0.4) !important; border:0;">Get Access</a>
             </li>
           </ul>
         </div>
