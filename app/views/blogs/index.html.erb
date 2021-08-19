@@ -1,3 +1,32 @@
-<div class="container">
-  <h1>Blogs</h1>
+<div class="container blog-wrapper">
+  <h1>Blog</h1>
+  <p class="blog-capt">Our latest web design tricks, insights, and resources, hot off the presses</p>
+  <div class="row blogs">
+    <div class="col-md-4">
+      <div class="blog-card">
+        <%= image_tag 'blog-image1.png' %>
+        <div class="blog-info">
+          <h3 class="blog-title">10 Secret Tips For Managing A Remote Team</h3>
+          <p class="caption">Our latest web design tricks, insights, and resources, hot off the presses. Our latest web design tricks, insights, and resources, hot off the.</p>
+          <div class="author">
+            <%= image_tag 'blog-avatar.png', class: "blog-author-avatar" %>
+            <div class="author-info">
+              <p class="author-name">John Birmingham</p>
+              <p class="author-name">|</p>
+              <p class=author-name>25 January, 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="blog-card">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="blog-card">
+      </div>
+    </div>
+  </div>
 </div>
+<%= javascript_pack_tag 'index.js' %>
