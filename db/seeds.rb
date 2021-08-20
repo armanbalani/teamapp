@@ -20,7 +20,8 @@ end
 
 
 
-
+unsplash_images = Unsplash::Photo.search('architecture', 1, 25)
+p unsplash_images
 
 
 
