@@ -9,8 +9,8 @@
 
 20.times do |id|
     Blog.create!(
-        title: Faker::Lorem.sentence(word_count: rand(2..10)).chomp('.'),
-        description: Faker::Lorem.paragraph_by_chars(number: rand(143..158)),
+        title: Faker::Lorem.sentence(word_count: rand(4..6)).chomp('.'),
+        description: Faker::Lorem.paragraph_by_chars(number: rand(92..142)),
         author: Faker::Name.name, 
         image_url: Faker::LoremFlickr.image(size: "734x410", search_terms: ['design', 'art']),
         publish_date: Faker::Date.between(from: '2021-06-23', to: '2021-08-20'),

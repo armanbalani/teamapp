@@ -2,6 +2,25 @@
   <h1>Blog</h1>
   <p class="blog-capt">Our latest web design tricks, insights, and resources, hot off the presses</p>
   <div class="row blogs">
+    <% @blogs.each do |blog| %>
+      <div class="col-md-4">
+        <div class="blog-card">
+          <%= image_tag blog.image_url %>
+          <div class="blog-info">
+            <h3 class="blog-title"><%= blog.title %></h3>
+            <p class="caption"><%= blog.description %></p>
+            <div class="author">
+              <%= image_tag blog.author_image, class: "blog-author-avatar" %>
+              <div class="author-info">
+                <p class="author-name"><%= blog.author %></p>
+                <p class="author-name">|</p>
+                <p class="author-name"><%= blog.publish_date %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
     <div class="col-md-4">
       <div class="blog-card">
         <%= image_tag 'blog-image1.png' %>
