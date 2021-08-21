@@ -6,22 +6,41 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require 'json'
+
+
+
+image_urls = []
+profile_images = []
+
+unsplash_images = Unsplash::Photo.search('web design', rand(1..10), 80)
+
+unsplash_images.each do |image|
+    if image.width / image.height >= 1
+        image_urls << image.urls.regular
+        profile_images << image.user.profile_image.large
+    end
+end
+
 
 20.times do |id|
     Blog.create!(
-        title: Faker::Lorem.sentence(word_count: rand(4..6)).chomp('.'),
-        description: Faker::Lorem.paragraph_by_chars(number: rand(92..142)),
+        title: Faker::Lorem.sentence(word_count: rand(5..6)).chomp('.'),
+        description: Faker::Lorem.paragraph_by_chars(number: rand(105..133)),
         author: Faker::Name.name, 
-        image_url: Faker::LoremFlickr.image(size: "734x410", search_terms: ['design', 'art']),
+        image_url: image_urls.pop,
         publish_date: Faker::Date.between(from: '2021-06-23', to: '2021-08-20'),
-        author_image: Faker::LoremFlickr.image(size: "60x60", search_terms: ['portrait', 'profile'])
+        author_image: profile_images.pop
     )
 end
 
 
 
-unsplash_images = Unsplash::Photo.search('architecture', 1, 25)
-p unsplash_images
+
+
+
+
+
 
 
 

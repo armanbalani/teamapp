@@ -5,10 +5,12 @@
     <% @blogs.each do |blog| %>
       <div class="col-md-4">
         <div class="blog-card">
-          <%= image_tag blog.image_url %>
+          <%= image_tag blog.image_url, class: "blog-image" %>
           <div class="blog-info">
-            <h3 class="blog-title"><%= blog.title %></h3>
-            <p class="caption"><%= blog.description %></p>
+            <div class="title-and-caption">
+              <h3 class="blog-title"><%= blog.title %></h3>
+              <p class="caption"><%= blog.description %></p>
+            </div>
             <div class="author">
               <%= image_tag blog.author_image, class: "blog-author-avatar" %>
               <div class="author-info">
@@ -25,8 +27,10 @@
       <div class="blog-card">
         <%= image_tag 'blog-image1.png' %>
         <div class="blog-info">
-          <h3 class="blog-title">10 Secret Tips For Managing A Remote Team</h3>
-          <p class="caption">Our latest web design tricks, insights, and resources, hot off the presses. Our latest web design tricks, insights, and resources, hot off the.</p>
+          <div class="title-and-caption">
+            <h3 class="blog-title">10 Secret Tips For Managing A Remote Team</h3>
+            <p class="caption">Our latest web design tricks, insights, and resources, hot off the presses. Our latest web design tricks, insights, and resources, hot off the.</p>
+          </div>
           <div class="author">
             <%= image_tag 'blog-avatar.png', class: "blog-author-avatar" %>
             <div class="author-info">
@@ -36,14 +40,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="blog-card">
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="blog-card">
       </div>
     </div>
   </div>

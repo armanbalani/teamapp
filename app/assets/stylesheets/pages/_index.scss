@@ -24,10 +24,15 @@
     width: 367px;
     background-color: white;
     border-radius: 8px;
+    margin-bottom: 50px;
 }
 
 .blog-info {
     margin: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 218px;
 }
 
 .blog-title {
@@ -39,7 +44,6 @@
 .caption {
     font-size: 15px;
     font-weight: 600;
-    margin-bottom: 65px;
 }
 
 .author {
@@ -61,4 +65,14 @@
 
 .author-info {
     display: flex;
+}
+
+.blog-image {
+    height: 205px;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.blogs {
+    margin-top: 60px;
 }
