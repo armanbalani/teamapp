@@ -1,3 +1,4 @@
-// document.addEventListener('turbolinks:load', () => {
-//     $(document.body).css("background", "#F5F7FA")
-// })
+document.addEventListener('turbolinks:load', () => {
+    $(".disabled").remove()
+})
+

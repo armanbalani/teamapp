@@ -47,7 +47,7 @@ document.addEventListener('turbolinks:load', () => {
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
       var viewHeight = window.innerHeight
-      if (scroll >= viewHeight) {
+      if (scroll >= (viewHeight - 40)) {
         navbrand.css("color", "#1B326C")
         navlinks.addClass("alt-navlink");
         navbutton.addClass("alt-button")

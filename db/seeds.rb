@@ -13,7 +13,7 @@ require 'json'
 image_urls = []
 profile_images = []
 
-unsplash_images = Unsplash::Photo.search('web design', rand(1..10), 80)
+unsplash_images = Unsplash::Photo.search('web design', rand(1..20), 80)
 
 unsplash_images.each do |image|
     if image.width / image.height >= 1

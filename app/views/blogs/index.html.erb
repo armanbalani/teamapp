@@ -25,5 +25,12 @@
     <% end %>
   </div>
 </div>
-<%= will_paginate @blogs %>
+<div class="pagination-wrapper">
+  <%= will_paginate @blogs, page_links: false %>
+</div>
+<div class="page-number-wrapper">
+  <p class="page-number"><%= @current_page %></p>
+  <p class="page-number">/</p>
+  <p class="page-number"><%= (@all_blogs.length/9.to_f).ceil %></p>
+</div>
 <%= javascript_pack_tag 'index.js' %>

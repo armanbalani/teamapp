@@ -76,3 +76,54 @@
 .blogs {
     margin-top: 60px;
 }
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.next_page {
+    color: #213757;
+    padding: 12px 24px;
+    border-style: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(33, 55, 87, 0.1);
+}
+
+.next_page:hover {
+    text-decoration: none;
+    background-color: rgba(33, 55, 87, 0.2);
+    color: #213757;
+}
+
+.previous_page {
+    color: #213757;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 12px 24px;
+    border-style: none;
+    border-radius: 4px;
+    background-color: rgba(33, 55, 87, 0.1);
+}
+
+.previous_page:hover {
+    text-decoration: none;
+    background-color: rgba(33, 55, 87, 0.2);
+    color: #213757;
+}
+
+.page-number-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.page-number {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 2px;
+    text-align: center;
+    margin-top: 20px;
+}
