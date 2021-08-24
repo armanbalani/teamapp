@@ -1,2 +1,16 @@
-<h1>Blogs#show</h1>
-<p>Find me in app/views/blogs/show.html.erb</p>
+<div class="container">
+  <div class="blog-wrapper">
+    <h1><%= @blog.title %></h1>
+    <div class="author author-show">
+      <%= image_tag @blog.author_image, class: "blog-author-avatar avatar-show" %>
+      <div class="author-info">
+        <p class="author-name author-name-show"><%= @blog.author %></p>
+        <p class="author-name author-name-show author-line">|</p>
+        <p class="author-name author-name-show"><%= @blog.publish_date %></p>
+      </div>
+    </div>
+  </div>
+  <div class="blog-image-wrapper">
+    <%= image_tag @blog.image_url, class: "main-blog-image" %>
+  </div>
+</div>

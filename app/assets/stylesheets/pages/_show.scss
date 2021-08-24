@@ -1,0 +1,37 @@
+
+.blog-wrapper {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 115px;
+    margin-bottom: 70px;
+}
+
+.blog-image-wrapper {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.main-blog-image {
+    max-width: 900px;
+}
+
+.author-show {
+    margin-top: 40px;
+}
+
+.avatar-show {
+    width: 40px;
+}
+
+.author-name-show {
+    font-size: 15px;
+    margin-right: 30px;
+    color: hsla(215.556, 45%, 23.53%, 0.7);
+    font-weight: 400;
+}
+
+.author-line {
+   color: rgba(33, 55, 87, 0.15);
+}
