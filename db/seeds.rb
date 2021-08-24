@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'json'
+require 'literate_randomizer'
 
 
 
@@ -25,12 +26,13 @@ end
 
 20.times do |id|
     Blog.create!(
-        title: Faker::Lorem.sentence(word_count: rand(5..6)).chomp('.'),
-        description: Faker::Lorem.paragraph_by_chars(number: rand(105..133)),
-        author: Faker::Name.name, 
+        title: LiterateRandomizer.sentence(words: rand(5..7)),
+        description: LiterateRandomizer.paragraph(words: rand(4..6), sentences: rand(3..4)),
+        author: "#{Faker::Name.first_name} #{Faker::Name.last_name}", 
         image_url: image_urls.pop,
         publish_date: Faker::Date.between(from: '2021-06-23', to: '2021-08-20'),
-        author_image: profile_images.pop
+        author_image: profile_images.pop,
+        content: LiterateRandomizer.paragraphs(words: (4..16), sentences: (3..18), paragraphs: (10..24), join: false)
     )
 end
 
@@ -53,4 +55,5 @@ end
 #     t.string "author_image"
 #     t.datetime "created_at", null: false
 #     t.datetime "updated_at", null: false
+#     t.text "content"
 #   end

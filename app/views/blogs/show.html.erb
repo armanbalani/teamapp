@@ -13,4 +13,9 @@
   <div class="blog-image-wrapper">
     <%= image_tag @blog.image_url, class: "main-blog-image" %>
   </div>
+  <div class="blog-wrapper">
+    <% @blog.content.each do |para| %>
+      <p class="content-para"><%= para %></p>
+    <% end %>
+  </div>
 </div>
