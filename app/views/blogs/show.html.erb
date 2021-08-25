@@ -14,8 +14,28 @@
     <%= image_tag @blog.image_url, class: "main-blog-image" %>
   </div>
   <div class="blog-wrapper">
-    <% @blog.content.each do |para| %>
-      <p class="content-para"><%= para %></p>
-    <% end %>
+    <div class="content">
+      <% @blog.content.each do |para| %>
+        <p class="content-para"><%= para %></p>
+      <% end %>
+    </div>
+    <div class="end-author-info">
+      <%= image_tag @blog.author_image, class: "blog-author-avatar end-avatar" %>
+      <div class="end-author-text">
+        <p class="written-by">Written By</p>
+        <h3 class="end-author-name"><%= @blog.author %></h3>
+        <p class="caption end-caption">COO at Team, Author of Teamwork Makes the Dreamwork</p>
+      </div>
+    </div>
+    <hr>
+    <div class="comment-section">
+      <h3 class="conversation">Join the Conversation</h3>
+      <div class="comment-sub">
+        <%= image_tag 'blank-avatar', class: "end-avatar" %>
+        <form action="" class="comment-form">
+          <input type="text" class="comment-input">
+        </form>
+      </div>
+    </div>
   </div>
 </div>
