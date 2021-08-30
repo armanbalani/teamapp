@@ -11,10 +11,14 @@
     display: flex;
     justify-content: center;
     height: fit-content;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .main-blog-image {
-    max-width: 900px;
+    width: 100%;
+    height: 450px;
+
 }
 
 .author-show {
@@ -75,7 +79,7 @@
 }
 
 .content {
-    margin-bottom: 140px;
+    margin-bottom: 90px;
 }
 
 .comment-sub {
@@ -103,6 +107,29 @@
     width: 100%;
     border-radius: 4px;
     min-height: 140px;
+    padding-bottom: 90px;
+    padding-left: 15px;
+    font-family: "Mullish", sans-serif;
+
+}
+
+.comment-input::-webkit-input-placeholder {
+    color: #BBC8D4
+
+}
+
+.comment-input::-moz-placeholder {
+    color: #BBC8D4 
+}
+
+.comment-input::-ms-placeholder {
+    color: #BBC8D4
+
+}
+
+.comment-input::placeholder {
+    color: #BBC8D4
+
 }
 
 .comment-section {
