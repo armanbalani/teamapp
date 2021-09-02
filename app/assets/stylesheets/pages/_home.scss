@@ -19,6 +19,7 @@ body p {
     height: 100vh;
     background: radial-gradient(29.25% 51.31% at 71.15% 56.95%, rgba(0, 0, 0, 0) 59.31%, rgba(0, 0, 0, 0.4) 100%), url(banner.png);
     background-size: cover;
+    background-position: center center;
 }
 
 .early-access {
@@ -49,9 +50,114 @@ body p {
     padding-top: 126px;
 }
 
-.container {
-    padding: 0 !important;
+
+@media screen 
+and (min-device-width: 200px)
+and (max-device-width: 350px) {
+
+    #testimonial-section {
+    display: none;
+    }
+
+    .hero-content {
+        padding-top: 50% !important;
+    }
+
+    .hero-title {
+        font-size: 32px !important;
+    }
+
+    .hero-text {
+        font-size: 14px !important;
+    }
+
+    .early-access {
+       flex-wrap: wrap;
+   }
+
+   .submit-btn {
+       width: 100%;
+       border-radius: 11px !important;
+   }
+
+   .email-input {
+       margin-right: 0px !important;
+       margin-bottom: 15px;
+       width: 100%;
+       min-width: 0px !important;
+   }
+
+   .container {
+    // padding: 0 !important;
+    overflow-x: hidden;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    }
 }
+
+
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 1025px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .container {
+        overflow-x: hidden !important;
+    }
+
+    .hero-content {
+        padding-top: 50% !important;
+    }
+
+}
+
+
+
+@media screen 
+ and (max-device-width: 540px) 
+ and (min-device-width: 321px) 
+{ 
+
+   #testimonial-section {
+    display: none;
+   }
+
+   .hero-content {
+       padding-top: 50% !important;
+   }
+
+   .hero-content h1 {
+       font-size: 38px !important;
+   }
+
+   .hero-content p {
+       font-size: 16px;
+   }
+
+   .early-access {
+       flex-wrap: wrap;
+   }
+
+   .submit-btn {
+       width: 100%;
+       border-radius: 11px !important;
+   }
+
+   .email-input {
+       margin-right: 0px !important;
+       margin-bottom: 15px;
+       width: 100%;
+       min-width: 0px !important;
+   }
+
+   .container {
+    // padding: 0 !important;
+    overflow-x: hidden;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    }
+}
+
 
 .hero h1 {
     font-size: 52px;
