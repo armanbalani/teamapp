@@ -69,7 +69,6 @@ and (min-device-width: 200px)
 and (max-device-width: 350px) {
 
     #testimonial-section {
-    display: none;
     }
 
     body h1 {
@@ -124,6 +123,45 @@ and (max-device-width: 350px) {
    .teamwork-content img {
        margin-left: -16px;
    }
+
+   .second-footer-row {
+       margin-bottom: 24px;
+   }
+
+   .footer-wrapper {
+       display: block !important;
+   }
+
+   .footer {
+       height: 100% !important;
+   }
+
+   .dashboard {
+       position: inherit !important;
+       margin-right: -16px;
+   }
+
+
+   .teamwork-content {
+       flex-direction: column-reverse;
+   }
+
+   .teamwork-text {
+       padding-top: 0px !important ;
+   }
+
+   .task-management {
+       margin-top: 90px !important;
+   }
+
+    .split-section-image {
+        margin-bottom: 50px !important;
+    }
+
+    .footer-email {
+        min-width: 288px;
+    }
+
    
 }
 
@@ -151,7 +189,10 @@ and (max-device-width: 350px) {
 { 
 
    #testimonial-section {
-    display: none;
+   }
+
+   .slide {
+       width: 95% !important;
    }
 
    .hero-content {
