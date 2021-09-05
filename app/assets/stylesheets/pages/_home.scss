@@ -50,6 +50,19 @@ body p {
     padding-top: 126px;
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+    .dashboard {
+        position: inherit !important;
+        margin-right: -153px;
+        align-self: flex-end;
+        max-width: 60% !important;
+    }
+
+    .body {
+        overflow-x: hidden;
+    }
+}
+
 
 @media screen 
 and (min-device-width: 200px)
@@ -57,6 +70,16 @@ and (max-device-width: 350px) {
 
     #testimonial-section {
     display: none;
+    }
+
+    body h1 {
+       font-size: 44px !important;
+       line-height: 49px !important;
+    }
+
+
+    body p {
+       font-size: 16px !important;
     }
 
     .hero-content {
@@ -93,6 +116,15 @@ and (max-device-width: 350px) {
     padding-left: 15px !important;
     padding-right: 15px !important;
     }
+
+    #split-section-1 {
+       flex-direction: column !important;
+   }
+   
+   .teamwork-content img {
+       margin-left: -16px;
+   }
+   
 }
 
 
@@ -134,13 +166,45 @@ and (max-device-width: 350px) {
        font-size: 16px;
    }
 
+   body h1 {
+       font-size: 44px !important;
+       line-height: 49px !important;
+   }
+
+
+   body p {
+       font-size: 16px !important;
+   }
+
    .early-access {
        flex-wrap: wrap;
    }
 
+   #split-section-1 {
+       flex-direction: column !important;
+   }
+   
+   .teamwork-content img {
+       margin-left: -16px;
+   }
+   
+   
+
    .submit-btn {
        width: 100%;
        border-radius: 11px !important;
+   }
+
+   .second-footer-row {
+       margin-bottom: 24px;
+   }
+
+   .footer-wrapper {
+       display: block !important;
+   }
+
+   .footer {
+       height: 100% !important;
    }
 
    .email-input {
@@ -150,12 +214,36 @@ and (max-device-width: 350px) {
        min-width: 0px !important;
    }
 
+   .dashboard {
+       position: inherit !important;
+       margin-right: -16px;
+   }
+
+
+   .teamwork-content {
+       flex-direction: column-reverse;
+   }
+
+   .teamwork-text {
+       padding-top: 0px !important ;
+   }
+
+   .task-management {
+       margin-top: 90px !important;
+   }
+
    .container {
     // padding: 0 !important;
     overflow-x: hidden;
     padding-left: 15px !important;
     padding-right: 15px !important;
     }
+
+    .split-section-image {
+        margin-bottom: 50px !important;
+    }
+
+
 }
 
 
@@ -171,6 +259,7 @@ and (max-device-width: 350px) {
     right: 0;
 }
 
+
 .email-input {
     height: 56px;
     min-width: 321px;
@@ -181,7 +270,7 @@ and (max-device-width: 350px) {
 
 }
 
-.email-input:focus {
+input:focus {
     outline: none;
 }
 
@@ -316,6 +405,10 @@ input:focus::placeholder {
     font-size: 14px;
     border: none;
     min-width: 267px;
+    padding-left: 16px;
+    height: 56px;
+    min-width: 321px;
+    color: white;
 }
 
 .footer-email::-webkit-input-placeholder {
