@@ -50,7 +50,7 @@ body p {
     padding-top: 126px;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 700px) {
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
     .dashboard {
         position: inherit !important;
         margin-right: -153px;
@@ -58,9 +58,89 @@ body p {
         max-width: 60% !important;
     }
 
-    .body {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .split-section-image {
+        max-width: 50%;
+        margin-right: 50px;
+        height: 100%;
+        flex: 1 1 auto;
+    }
+
+    #split-section-2 img {
+        margin-right: 0px !important;
+    }
+
+    .teamwork-content {
+        align-items: center;
+    }
+
+    .teamwork-content h1 {
+        font-size: 44px !important;
+        line-height: 50px !important;
+    }
+
+    .teamwork-content p {
+        font-size: 16px !important;
+    }
+
+    .dashboard {
+        margin-right: -48px !important;
+    }
+
+    .task-management {
+        margin: 0px !important;
+    }
+
+    .section-2 {
+        margin-top: 90px !important;
+    }
+
+    .teamwork-text {
+        max-width: 50%;
+        padding-top: 0 !important;
+    }
+
+    #teamwork-text-2 {
+        margin-right: 50px;
+    }
+
+    .testimonial-header {
+        margin: 0 !important;
+    }
+
+    .footer {
         overflow-x: hidden;
     }
+
+}
+
+@media screen and (max-width: 990px) {
+
+    .first-footer-row {
+        margin-right: 0px !important;
+    }
+
+   .second-footer-row {
+       margin-bottom: 24px;
+       margin-right: 0px !important;
+   }
+
+   .footer-wrapper {
+       display: block !important;
+       text-align: center;
+   }
+
+   .footer {
+       height: 100% !important;
+   }
+
+   .footer-access {
+       justify-content: center;
+   }
+
 }
 
 
@@ -184,8 +264,8 @@ and (max-device-width: 350px) {
 
 
 @media screen 
- and (max-device-width: 540px) 
- and (min-device-width: 321px) 
+ and (max-width: 540px) 
+ and (min-width: 321px) 
 { 
 
    #testimonial-section {

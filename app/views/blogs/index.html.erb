@@ -3,7 +3,7 @@
   <p class="blog-capt">Our latest web design tricks, insights, and resources, hot off the presses</p>
   <div class="row blogs">
     <% @blogs.each do |blog| %>
-      <div class="col-md-4">
+      <div class="col-xl-4 col-lg-6 col-md-12">
         <%= link_to  blog_path(blog), class: "blog-link" do %>
           <div class="blog-card">
             <%= image_tag blog.image_url, class: "blog-image" %>
