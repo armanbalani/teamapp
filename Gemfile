@@ -22,7 +22,6 @@ gem 'unsplash'
 gem "shrine", "~> 3.0"
 gem 'will_paginate', '~> 3.1.0'
 gem 'literate_randomizer'
-gem 'refinerycms', '~> 3.0.0'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
