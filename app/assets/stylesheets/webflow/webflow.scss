@@ -1006,15 +1006,15 @@ textarea.w-select {
 .w-slider-dot:focus.w-active {
   box-shadow: none;
 }
+
+.w-slider-controls {
+    display: flex;
+    justify-content: end;
+}
+
 .w-slider-arrow-left,
 .w-slider-arrow-right {
-  position: absolute;
   width: 80px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   cursor: pointer;
   overflow: hidden;
   color: white;
@@ -1030,20 +1030,10 @@ textarea.w-select {
 .w-slider-arrow-right [class^='w-icon-'],
 .w-slider-arrow-left [class*=' w-icon-'],
 .w-slider-arrow-right [class*=' w-icon-'] {
-  position: absolute;
 }
 .w-slider-arrow-left:focus,
 .w-slider-arrow-right:focus {
   outline: 0;
-}
-.w-slider-arrow-left {
-  z-index: 3;
-  right: auto;
-  left: 950px;
-}
-.w-slider-arrow-right {
-  z-index: 4;
-  left: auto;
 }
 .w-icon-slider-left,
 .w-icon-slider-right {

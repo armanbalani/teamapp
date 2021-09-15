@@ -22,6 +22,7 @@ body p {
     background-position: center center;
 }
 
+
 .early-access {
     display: flex;
 }
@@ -465,15 +466,10 @@ input:focus::placeholder {
 }
 
 .next-arrow {
-    position: absolute;
-    bottom: 0;
-    right: 25px;
     width: 27px;
 }
 
 .prev-arrow {
-    position: absolute;
-    bottom: 0;
     width: 27px;
 }
 
